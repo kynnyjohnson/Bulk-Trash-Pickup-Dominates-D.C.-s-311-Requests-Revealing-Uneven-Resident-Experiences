@@ -6,6 +6,11 @@ This project analyzes Washington, D.C. 311 service request data from 2025 to exa
 
 **Data Sources**
 The data comes from Washington, D.C.’s 311 service request records. The raw dataset originally contained 440,601 rows. It includes fields such as service request ID, street address, service code, service description, agency, add date, resolution date, service order status, priority, and ward. After cleaning and narrowing the data for analysis, the final cleaned dataset contained 4,324 rows.
+Original dataset https://docs.google.com/spreadsheets/d/1Y6UNcsDqXxrffo1GBV0KuzEOpd09WKiz/edit?usp=drive_link&ouid=114886558833181284001&rtpof=true&sd=true 
+- Cleaned dataset (4,324 rows): included in this repository
+The dataset includes fields such as service request ID, street address, service code, service description, agency, add date, resolution date, service order status, priority, and ward.
+Because the original dataset is too large to upload directly to GitHub, it is linked above for transparency and reproducibility.
+
 
 **Methodology**
 I began with the raw 311 dataset, which originally contained 440,601 rows, and cleaned it to make the data easier to analyze. I standardized column names, reviewed missing and inconsistent values, and focused on the variables most relevant to reporting, including service request ID, service code description, organization acronym, add date, resolution date, service order status, and ward. I converted date fields into a consistent format and used them to calculate resolution time where both an add date and resolution date were available. I also filtered the dataset down to the records most relevant to my reporting focus, which resulted in a cleaned working file of 4,324 rows. From there, I grouped requests by service type, agency, and ward to identify patterns in the data and reviewed statuses such as Closed, In-Progress, Canceled, and Closed (Duplicate) to avoid treating all records the same in the analysis.
