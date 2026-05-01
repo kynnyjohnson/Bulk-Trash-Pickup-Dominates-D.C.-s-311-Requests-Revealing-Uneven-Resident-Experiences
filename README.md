@@ -1,4 +1,4 @@
-# kyns-final
+# Bulk Trash Pickup Dominates D.C.’s 311 Requests, Revealing Uneven Resident Experiences
 **DC 311 Service Requests Analysis**
 
 **Overview**
